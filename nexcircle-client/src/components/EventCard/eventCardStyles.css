@@ -1,5 +1,5 @@
 .event-card {
-  background-color: white;
+  background-color: #F7F7F7;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1.5rem;
@@ -9,7 +9,11 @@
   flex-direction: column;
   justify-content: space-between; /* Pushes button to the bottom */
 }
+.event-card:hover{
+  box-shadow: 0 0 15px rgba(157, 192, 137), 0 0 25px rgba(157, 192, 137);
+  background: #9dc08b;
 
+}
 .event-card h3 {
   font-size: 1.8rem;
   color: var(--primary-color);

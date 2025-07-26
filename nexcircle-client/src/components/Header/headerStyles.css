@@ -62,6 +62,13 @@
   transform-origin: 1px;
 }
 
+.nav-link-button {
+  border: none;
+  background-color:#DF6D14;
+  color: whitesmoke;
+  padding: 0.5rem 1rem;
+}
+
 /* Mobile navigation styles */
 @media (max-width: 768px) {
   .nav-bar {
@@ -100,3 +107,4 @@
     display: flex; /* Show hamburger on small screens */
   }
 }
+

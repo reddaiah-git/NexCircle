@@ -38,7 +38,7 @@ const Home = () => {
       <section className="hero-section">
         <h2>Welcome to NexCircle</h2>
         <p>Discover and create events near you!</p>
-        <button className="call-to-action-button" onClick={() => navigate('/events')}>Explore Events</button>
+        <button className="call-to-action-button" onClick={() => navigate('/events')}>EXPLORE EVENTS</button>
       </section>
 
       <section className="featured-events-section">
