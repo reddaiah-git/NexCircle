@@ -1,0 +1,158 @@
+.home-container {
+  padding: 2rem;
+  text-align: center;
+  background-image: linear-gradient(#A3DC9A, #FFD6BA, #A3DC9A);
+}
+
+.hero-section {
+  padding: 4rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  background-image: url(https://img.freepik.com/free-vector/realistic-dynamic-fog-background_23-2149111508.jpg);
+  background-size: cover;
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.call-to-action-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.call-to-action-button:hover {
+  background-color: #0056b3;
+}
+
+.featured-events-section {
+  margin-bottom: 2rem;
+}
+
+.featured-events-section h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.event-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h4 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.event-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+
+.event-card p strong {
+  color: #333;
+}
+
+.about-section {
+  background-color: #f8f9fa;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+}
+
+.about-section h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+  .home-container {
+    padding: 3rem;
+  }
+
+  .hero-section {
+    padding: 6rem 3rem;
+  }
+
+  .hero-section h2 {
+    font-size: 3.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.5rem;
+  }
+
+  .event-list {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+
+  .about-section {
+    padding: 4rem 3rem;
+  }
+
+  .about-section p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-container {
+    padding: 4rem;
+  }
+
+  .hero-section {
+    padding: 8rem 4rem;
+  }
+
+  .hero-section h2 {
+    font-size: 4.5rem;
+    color: #E67514;
+  }
+
+  .hero-section p {
+    font-size: 1.8rem;
+    color: #F8F8F8;
+  }
+
+  .event-list {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for very large screens */
+  }
+}

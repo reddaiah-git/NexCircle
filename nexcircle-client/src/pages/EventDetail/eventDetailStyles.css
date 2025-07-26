@@ -1,0 +1,108 @@
+.event-detail-page {
+  padding: 2rem;
+}
+
+.event-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.event-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.event-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.event-host {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.event-info {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.info-section {
+  margin-bottom: 1.5rem;
+}
+
+.info-section h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+}
+
+.info-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.rsvp-button {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rsvp-button:hover {
+  background-color: #218838;
+}
+
+.rsvp-button.rsvp-cancel {
+  background-color: var(--danger-color);
+}
+
+.rsvp-button.rsvp-cancel:hover {
+  background-color: #c82333;
+}
+
+.event-map-chat {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.map-section,
+.chat-section {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.map-section h3,
+.chat-section h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+  .event-detail-page {
+    padding: 3rem;
+  }
+
+  .event-map-chat {
+    flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+  }
+}

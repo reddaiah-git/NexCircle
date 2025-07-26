@@ -1,0 +1,46 @@
+.event-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes button to the bottom */
+}
+
+.event-card h3 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+}
+
+.event-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.event-card p strong {
+  color: #333;
+}
+
+.view-details-button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem; /* Space from description */
+  align-self: flex-start; /* Align button to the start */
+}
+
+.view-details-button:hover {
+  background-color: #218838;
+}

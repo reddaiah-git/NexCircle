@@ -1,0 +1,44 @@
+.footer-container {
+  background-color: cadetblue;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.8rem;
+  margin: 0 0.8rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block; /* Ensures transform works */
+}
+
+.social-icons a:hover {
+  color: var(--highlight-color); /* Use a highlight color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.social-icons .icon {
+  border: 2px solid white; /* Border around the icon */
+  border-radius: 50%; /* Makes it circular */
+  padding: 0.5rem; /* Space between icon and border */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icons a:hover .icon {
+  border-color: var(--highlight-color); /* Change border color on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
+}

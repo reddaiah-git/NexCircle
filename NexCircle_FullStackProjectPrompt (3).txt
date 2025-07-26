@@ -1,0 +1,166 @@
+Project Name: NexCircle – Event-Based Community Builder Platform
+
+Tech Stack:
+- Frontend: React.js (with CSS animations, hover effects)
+- Backend: Node.js + Express.js
+- Database: MySQL
+
+---------------------------
+Key Features to Implement:
+---------------------------
+1. **User Authentication**
+   - Secure login/signup (JWT-based)
+   - Social login support
+   - Password reset flow
+
+2. **Local Event Discovery**
+   - List of events based on user’s geolocation
+   - Filters by distance, interest tags, date/time
+
+3. **Event Creation & Management**
+   - Users can create public/private events
+   - Add title, description, location, tags, date/time
+
+4. **Interactive Map Integration**
+   - Google Maps to show nearby events
+
+5. **Join & RSVP System**
+   - RSVP to events and track who’s going
+
+6. **Smart Chat per Event**
+   - Real-time event chat using Socket.io
+
+7. **User Profiles & Interests**
+   - Edit bio, photo, location, interest tags
+
+8. **Admin Dashboard**
+   - Review user reports
+   - Moderate events and user content
+
+9. **Notifications**
+   - Email and in-app alerts for event updates
+
+10. **Responsive & Animated UI**
+    - Hover animations for buttons/cards
+    - Smooth CSS transitions
+
+---------------------------
+Recommended Color Palette:
+---------------------------
+- Primary: #283149 (Charcoal Blue)
+- Secondary: #404B69 (Slate Blue)
+- Accent: #DAE1E7 (Pale Grey)
+- Highlight: #F73859 (Coral Red)
+- Background: #F9F9F9 (Off White)
+
+---------------------------
+Fonts:
+---------------------------
+- Headings: 'Poppins', sans-serif
+- Body: 'Open Sans', sans-serif
+
+---------------------------
+Suggested Layout Structure:
+---------------------------
+
+1. **Home Screen**
+   - Header with nav bar
+   - Hero section: intro to NexCircle
+   - Event highlights carousel
+   - CTA: “Discover Events Near You”
+
+2. **Event Feed Page**
+   - Filter/search bar at top
+   - Left: MapView
+   - Right: Event cards list with hover effects
+
+3. **Event Detail Page**
+   - Full event details (host, time, location)
+   - RSVP button
+   - Embedded map and chat section
+
+4. **Create Event Page**
+   - Step-based form with validation
+   - Date/time/location picker, tags input
+
+5. **Profile Page**
+   - Profile info, editable interests
+   - Lists of hosted and joined events
+
+6. **Admin Dashboard**
+   - Tables for users, reports, events
+   - Approve/delete/flag content
+
+---------------------------
+Frontend Folder Structure:
+---------------------------
+
+/src
+  /components
+    /Header
+      - Header.jsx
+      - headerStyles.css
+    /Footer
+      - Footer.jsx
+      - footerStyles.css
+    /EventCard
+      - EventCard.jsx
+      - eventCardStyles.css
+    /MapView
+      - MapView.jsx
+      - mapViewStyles.css
+    /ChatWidget
+      - ChatWidget.jsx
+      - chatWidgetStyles.css
+  /pages
+    /Home
+      - Home.jsx
+      - homeStyles.css
+    /EventFeed
+      - EventFeed.jsx
+      - eventFeedStyles.css
+    /EventDetail
+      - EventDetail.jsx
+      - eventDetailStyles.css
+    /CreateEvent
+      - CreateEvent.jsx
+      - createEventStyles.css
+    /Profile
+      - Profile.jsx
+      - profileStyles.css
+    /AdminDashboard
+      - AdminDashboard.jsx
+      - adminDashboardStyles.css
+  /utils
+    - api.js
+    - helpers.js
+  /assets
+    - logo.png
+    - banner.jpg
+  App.js
+  index.js
+
+/backend
+  /controllers
+    - userController.js
+    - eventController.js
+    - adminController.js
+  /models
+    - db.js
+    - userModel.js
+    - eventModel.js
+  /routes
+    - userRoutes.js
+    - eventRoutes.js
+    - adminRoutes.js
+  /middlewares
+    - authMiddleware.js
+  server.js
+
+.env
+package.json
+
+---------------------------
+Deployment Tip:
+---------------------------
+Frontend on Vercel, Server on Render. Use dotenv for configs. Secure API keys (Google Maps, Email Service). Test using Postman and Cypress.

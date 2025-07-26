@@ -1,0 +1,62 @@
+.event-feed-page {
+  padding: 2rem;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.filter-bar input,
+.filter-bar select {
+  flex: 1; /* Allow items to grow and shrink */
+  min-width: 150px; /* Ensure a minimum width for inputs */
+  padding: 0.8rem;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.event-list {
+  width: 100%; /* Take full width since map-view-section is removed */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 1.5rem;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+  .event-feed-page {
+    padding: 3rem;
+  }
+
+  .filter-bar {
+    flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+  }
+
+  .filter-bar input,
+  .filter-bar select {
+    flex: none; /* Reset flex to default */
+    width: auto; /* Auto width for inputs */
+  }
+
+  .event-list {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adjust grid for larger cards */
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .event-feed-page {
+    padding: 4rem;
+  }
+
+  .event-list {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Further adjust grid for very large screens */
+  }
+}
