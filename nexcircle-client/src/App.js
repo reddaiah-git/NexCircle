@@ -11,15 +11,8 @@ import Profile from './pages/Profile/Profile';
 import AdminDashboard from './pages/AdminDashboard/AdminDashboard';
 import Login from './pages/Auth/Login';
 import Signup from './pages/Auth/Signup';
-
-const ForgotPassword = () => {
-  return (
-    <div style={{ padding: '2rem', textAlign: 'center' }}>
-      <h2>Forgot Password</h2>
-      <p>Password reset functionality will be implemented here.</p>
-    </div>
-  );
-};
+import ForgotPassword from './pages/Auth/ForgotPassword';
+import ResetPassword from './pages/Auth/ResetPassword';
 
 function App() {
   return (
@@ -37,6 +30,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/reset-password/:token" element={<ResetPassword />} />
           </Routes>
         </main>
         <Footer />

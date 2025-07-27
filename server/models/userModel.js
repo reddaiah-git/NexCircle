@@ -23,6 +23,12 @@ const User = sequelize.define('User', {
     type: DataTypes.ENUM('user', 'admin'),
     defaultValue: 'user',
   },
+  resetPasswordToken: {
+    type: DataTypes.STRING,
+  },
+  resetPasswordExpires: {
+    type: DataTypes.DATE,
+  },
 });
 
 // Hash password before saving

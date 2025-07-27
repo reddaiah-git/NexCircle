@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import API from '../../services/api';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import './authStyles.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const { login } = useAuth();
 
@@ -40,18 +42,39 @@ const Login = () => {
         </div>
         <div className="form-group">
           <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
+          <div style={{ position: 'relative' }}>
+            <input
+              type={showPassword ? 'text' : 'password'}
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              style={{ paddingRight: '30px' }} // Make space for the icon
+            />
+            <button
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
+              style={{
+                position: 'absolute',
+                right: '5px',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                color: '#888',
+              }}
+            >
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
+            </button>
+          </div>
         </div>
         <button type="submit" className="auth-button">Login</button>
       </form>
       <p>Don't have an account? <a href="/signup">Sign Up</a></p>
-      <p><a href="/forgot-password">Forgot Password?</a></p>
+      <p className="auth-link">
+        <Link to="/forgot-password">Forgot Password?</Link>
+      </p>
     </div>
   );
 };

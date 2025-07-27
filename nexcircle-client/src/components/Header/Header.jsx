@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
-import { FaHome, FaCalendarAlt, FaPlusCircle, FaSignInAlt, FaSignOutAlt } from 'react-icons/fa';
+import { FaHome, FaCalendarAlt, FaPlusCircle } from 'react-icons/fa';
 import './headerStyles.css';
 
 const Header = () => {
@@ -28,9 +28,9 @@ const Header = () => {
           <li><Link to="/events" onClick={toggleMenu}><FaCalendarAlt /> Events</Link></li>
           <li><Link to="/create-event" onClick={toggleMenu}><FaPlusCircle /> Create Event</Link></li>
           {isAuthenticated ? (
-            <li><button onClick={() => { logout(); toggleMenu(); }} className="nav-link-button"><FaSignOutAlt /> Logout</button></li>
+            <li><button onClick={() => { logout(); toggleMenu(); }} className="nav-link-button">LOGOUT</button></li>
           ) : (
-            <li><Link to="/login" onClick={toggleMenu}><FaSignInAlt /> Login</Link></li>
+            <li><Link to="/login" onClick={toggleMenu} lassName="nav-link-button">LOGIN</Link></li>
           )}
         </ul>
       </nav>

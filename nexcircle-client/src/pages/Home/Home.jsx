@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import './homeStyles.css';
 
 // Placeholder images for the carousel
-import carouselImage1 from '../../assets/banner.jpg';
 
 const Home = () => {
   const navigate = useNavigate();
