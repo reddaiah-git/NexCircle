@@ -1,18 +1,18 @@
 .create-event-container {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-image: linear-gradient(to right, #F79B72, #2A4759);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.525);
 }
 
 .create-event-container h2 {
-    text-align: center;
-    color: #DDDDDD;
-    font-family: 'Roboto';
-    font-size: 2.4rem;
-    margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: "Roboto";
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-group {
@@ -43,19 +43,19 @@
 }
 
 .create-event-button {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    background-color: var(--accent-color);
-    border: none;
-    letter-spacing: 1cap;
-    color: white;
-    font-family: 'Roboto';
-    border-radius: 5px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--accent-color);
+  border: none;
+  letter-spacing: 1cap;
+  color: white;
+  font-family: "Roboto";
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .create-event-button:hover {

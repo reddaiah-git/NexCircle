@@ -1,7 +1,7 @@
 .home-container {
   padding: 2rem;
   text-align: center;
-  background-image: linear-gradient(#A3DC9A, #FFD6BA, #A3DC9A);
+  background-color: var(--background-color);
 }
 
 .hero-section {
@@ -10,13 +10,12 @@
   margin-bottom: 2rem;
   background-image: url(https://t3.ftcdn.net/jpg/08/12/70/12/360_F_812701281_qDF1YDwHrQgs2BbUCIrgqzkdkNhokjwp.jpg);
   background-size: cover;
-  height: 400px
+  height: 400px;
 }
 
 .hero-section h2 {
   font-size: 2.5rem;
-  letter-spacing: 0.5cap;
-  color: orange;
+  color: white;
   font-family: bree serif;
   margin-bottom: 1rem;
 }
@@ -24,13 +23,13 @@
 .hero-section p {
   font-size: 1.2rem;
   font-family: Roboto;
-  color: #F8F8F8;
+  color: #f8f8f8;
   margin-bottom: 2rem;
 }
 
 .call-to-action-button {
-  background-color: #FCE7C8;
-  color: #3A7D44;
+  background-color: #fce7c8;
+  color: #3a7d44;
   padding: 0.8rem 1.5rem;
   border: none;
   font-weight: 500;
@@ -40,14 +39,12 @@
   transition: background-color 0.3s ease;
   letter-spacing: 1cap;
 }
-.call-to-action-button:hover{
+.call-to-action-button:hover {
   border-radius: 20px;
   border: none;
-  background-color: #FCE7C8;
-  color: #3A7D44;
+  background-color: #fce7c8;
+  color: #3a7d44;
 }
-
-
 
 .featured-events-section {
   margin-bottom: 2rem;
@@ -92,7 +89,8 @@
 }
 
 .about-section {
-  background-color: #f8f9fa;
+  background-color: white;
+  box-shadow: 0 13px 30px rgba(0, 0, 0, 0.05);
   padding: 3rem 2rem;
   border-radius: 8px;
 }
@@ -123,13 +121,13 @@
   }
 
   .hero-section h2 {
-    color: orange;
+    color: white;
     font-size: 3.5rem;
   }
 
   .hero-section p {
     font-family: Roboto;
-    color: #F8F8F8;
+    color: #f8f8f8;
     font-size: 1.5rem;
   }
 
@@ -158,7 +156,7 @@
 
   .hero-section h2 {
     font-size: 4.5rem;
-    color: #E67514;
+    color: white;
   }
 
   .hero-section p {
@@ -167,6 +165,9 @@
   }
 
   .event-list {
-    grid-template-columns: repeat(3, 1fr); /* Three columns for very large screens */
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* Three columns for very large screens */
   }
 }

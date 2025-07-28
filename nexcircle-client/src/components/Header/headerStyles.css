@@ -9,10 +9,10 @@
 }
 
 .logo h1 {
-    color: white;
-    font-family: fantasy;
-    font-weight: 500;
-    margin: 0;
+  color: white;
+  font-family: fantasy;
+  font-weight: 500;
+  margin: 0;
 }
 
 .nav-bar ul {
@@ -64,24 +64,16 @@
   transform-origin: 1px;
 }
 
-.nav-link-button a{
+.nav-link-button {
+  color: white;
+  text-decoration: none;
+  background-color: var(--accent-color);
+  font-weight: bold;
   border: none;
-  background-color:rgb(254, 251, 199);
-  color: #E14434;
-  padding: 0.5rem 1rem;
-  letter-spacing: 0.5cap;
-  background: rgba(254, 251, 199);
-  box-shadow: 0 0 15px rgba(254, 251, 199), 0 0 25px rgba(254, 251, 199);
-border-radius: 10px;
+  padding: 0.5rem 0.8rem; /* Add padding for better hover area */
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
-
-.nav-link-button:hover{
-  background-color:rgb(255, 180, 180);
-  color: rgba(254, 251, 199);
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgb(255, 180, 180), 0 0 25px rgb(255, 180, 180);
-}
-
 
 /* Mobile navigation styles */
 @media (max-width: 768px) {
@@ -121,4 +113,3 @@ border-radius: 10px;
     display: flex; /* Show hamburger on small screens */
   }
 }
-

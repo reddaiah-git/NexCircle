@@ -1,12 +1,11 @@
 .footer-container {
-  background-color: cadetblue;
+  background-image: var(--header-gradient);
   color: white;
   text-align: center;
   padding: 1.5rem 0;
   position: relative;
   bottom: 0;
   width: 100%;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .footer-container p {
