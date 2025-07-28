@@ -81,7 +81,7 @@ const CreateEvent = () => {
             required
           />
         </div>
-        <button type="submit" className="create-event-button">Create Event</button>
+        <button type="submit" className="create-event-button">CREATE EVENT</button>
       </form>
     </div>
   );

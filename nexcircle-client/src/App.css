@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f0f2f5;
+  background-color: var(--background-color);
 }
 
 code {
@@ -15,14 +15,18 @@ code {
 }
 
 :root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --accent-color: #28a745;
-  --highlight-color: #ffc107;
-  --danger-color: #dc3545;
-  --info-color: #17a2b8;
-  --light-color: #f8f9fa;
-  --dark-color: #343a40;
+  /* Colors */
+  --primary-color: #1E2A78; /* Deep Indigo */
+  --secondary-color: #4A90E2; /* Electric Blue */
+  --accent-color: #FF3366; /* Vivid Coral */
+  --background-color: #F5F7FA; /* Soft Off-White */
+  --text-dark-color: #2C2C2C; /* Almost Black */
+  --shadow-color: #D0D5DD; /* Subtle Gray */
+
+  /* Gradients */
+  --header-gradient: linear-gradient(90deg, #1E2A78, #4A90E2);
+  --button-gradient: linear-gradient(135deg, #FF3366, #FF6F91);
+  --hover-gradient: linear-gradient(135deg, #e02d5c, #f88fa1);
 }
 
 main {

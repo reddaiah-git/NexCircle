@@ -37,7 +37,7 @@
 }
 
 .admin-table th {
-  background-color: #f2f2f2;
+  background-color: var(--background-color);
   font-weight: bold;
 }
 
@@ -52,5 +52,5 @@
 }
 
 .delete-button:hover {
-  background-color: #c82333;
+  background-image: var(--hover-gradient);
 }

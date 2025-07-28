@@ -1,5 +1,7 @@
 .event-feed-page {
   padding: 2rem;
+  margin-bottom: 4rem;
+  background-color: var(--background-color);
 }
 
 .filter-bar {
@@ -18,7 +20,7 @@
   flex: 1; /* Allow items to grow and shrink */
   min-width: 150px; /* Ensure a minimum width for inputs */
   padding: 0.8rem;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--shadow-color);
   border-radius: 4px;
 }
 

@@ -32,13 +32,13 @@
 }
 
 .social-icons .icon {
-  border: 2px solid white; /* Border around the icon */
+  border: 2px solid var(--background-color); /* Border around the icon */
   border-radius: 50%; /* Makes it circular */
   padding: 0.5rem; /* Space between icon and border */
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .social-icons a:hover .icon {
-  border-color: var(--highlight-color); /* Change border color on hover */
-  background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
+  border-color: var(--secondary-color); /* Change border color on hover */
+  background-color: rgba(245, 247, 250, 0.1); /* Subtle background on hover */
 }

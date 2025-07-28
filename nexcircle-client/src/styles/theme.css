@@ -1,0 +1,14 @@
+:root {
+  /* Colors */
+  --primary-color: #1E2A78; /* Deep Indigo */
+  --secondary-color: #4A90E2; /* Electric Blue */
+  --accent-color: #FF3366; /* Vivid Coral */
+  --background-color: #F5F7FA; /* Soft Off-White */
+  --text-dark-color: #2C2C2C; /* Almost Black */
+  --shadow-color: #D0D5DD; /* Subtle Gray */
+
+  /* Gradients */
+  --header-gradient: linear-gradient(90deg, #1E2A78, #4A90E2);
+  --button-gradient: linear-gradient(135deg, #FF3366, #FF6F91);
+  --hover-gradient: linear-gradient(135deg, #e02d5c, #f88fa1);
+}

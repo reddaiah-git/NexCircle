@@ -70,7 +70,7 @@
 }
 
 .rsvp-button.rsvp-cancel:hover {
-  background-color: #c82333;
+  background-image: var(--hover-gradient);
 }
 
 .event-map-chat {
@@ -83,10 +83,10 @@
 .chat-section {
   flex: 1;
   min-width: 300px;
-  background-color: white;
+  background-color: var(--background-color);
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 .map-section h3,

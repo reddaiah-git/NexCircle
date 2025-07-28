@@ -28,7 +28,7 @@
 
 .profile-info strong,
 .profile-section strong {
-  color: #333;
+  color: var(--text-dark-color);
 }
 
 .profile-section h3 {
@@ -63,5 +63,5 @@
 }
 
 .edit-profile-button:hover {
-  background-color: #0056b3;
+  background-image: var(--hover-gradient);
 }

@@ -26,11 +26,11 @@ const Header = () => {
         <ul>
           <li><Link to="/" onClick={toggleMenu}><FaHome /> Home</Link></li>
           <li><Link to="/events" onClick={toggleMenu}><FaCalendarAlt /> Events</Link></li>
-          <li><Link to="/create-event" onClick={toggleMenu}><FaPlusCircle /> Create Event</Link></li>
+          <li><Link to="/create-event" onClick={toggleMenu} ><FaPlusCircle /> Create Event</Link></li>
           {isAuthenticated ? (
             <li><button onClick={() => { logout(); toggleMenu(); }} className="nav-link-button">LOGOUT</button></li>
           ) : (
-            <li><Link to="/login" onClick={toggleMenu} lassName="nav-link-button">LOGIN</Link></li>
+            <li><Link to="/login" onClick={toggleMenu} className="nav-link-button">LOGIN</Link></li>
           )}
         </ul>
       </nav>
