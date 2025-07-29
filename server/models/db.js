@@ -11,7 +11,7 @@ const connectDB = async () => {
     await sequelize.authenticate();
     console.log('SQLite connection has been established successfully.');
     // Synchronize models with the database
-    await sequelize.sync({ alter: true }); // `alter: true` will update the table if it already exists
+        await sequelize.sync({ force: true }); // `force: true` will drop the table if it already exists and create a new one
     console.log('All models were synchronized successfully.');
   } catch (error) {
     console.error('Unable to connect to the database:', error);
