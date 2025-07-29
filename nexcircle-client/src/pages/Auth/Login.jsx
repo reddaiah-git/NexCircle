@@ -18,7 +18,7 @@ const Login = () => {
     try {
       const success = await login(email, password);
       if (success) {
-        alert('Login successful!');
+                navigate('/'); // Redirect to home page
       }
     } catch (error) {
       console.error('Login error:', error.response ? error.response.data : error.message);
