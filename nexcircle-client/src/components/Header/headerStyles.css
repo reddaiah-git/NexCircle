@@ -56,7 +56,7 @@
 
 .hamburger-menu .bar {
   width: 30px;
-  height: 3px;
+  height: 4px;
   background-color: white;
   border-radius: 10px;
   transition: all 0.3s linear;
